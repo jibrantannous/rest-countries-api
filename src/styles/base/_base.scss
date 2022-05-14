@@ -1,0 +1,113 @@
+*{
+    font-family: $font;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    //outline: 1px solid red;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    font-size: 62.5%;
+    //background-color: rgb(250 250 250);
+    
+}
+
+body{
+    font-size: $homepage-Items-size;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1000px;
+    min-width: 300px;
+    height: 100%
+}
+
+.light{
+    background-color: rgb(250 250 250) ;
+}
+
+.dark-body{
+    background-color: $very-dark-blue-background;
+
+    .search-icon{
+        color: $white-text;
+    }
+
+    .filter-input{
+        background-color: $dark-blue-elements;
+        color: $white-text;
+
+        &::placeholder{
+            color: $white-text;
+        }
+    }
+    .dropdown-main{
+        background-color: $dark-blue-elements;
+        color: $white-text;
+    }
+    .dropdown-options{
+        background-color: $dark-blue-elements;
+        color: $white-text;
+    }
+    .card{
+        background-color: $dark-blue-elements;
+        color: $white-text;
+        .card__main{
+            p{
+                color: $white-text;
+            }
+        }
+    }
+    .back-button{
+        background-color: $dark-blue-elements;
+        color: $white-text;
+    }
+    .country__info__container h2{
+        color: $white-text;
+    }
+    .country__info-content{
+        color: $white-text;
+    }
+    .border__countries-container{
+        p{
+            color: $white-text;
+        }
+        button{
+            background-color: $dark-blue-elements;
+            color: $white-text;
+        }
+    }
+}
+
+
+
+.dark-header{
+    background-color: $dark-blue-elements;
+    color: $white-text;
+
+    .header__container{
+
+        .logo{
+    
+            color: $white-text;
+        }
+    }
+
+    .header__dark-mode button {
+        background-color: $dark-blue-elements;
+
+        color: $white-text;
+    }
+}

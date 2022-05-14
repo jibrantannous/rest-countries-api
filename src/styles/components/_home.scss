@@ -1,0 +1,164 @@
+@import '../base/settings';
+
+.home{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.home__container{
+    margin-bottom: 50px;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.home__filters-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+
+    .search-icon{
+        
+        width: 20px;
+        height: 30px;
+        position: absolute;
+        left: 10px;
+        top: 2px;
+        z-index: 3;
+    }
+}
+
+
+/* FILTER LEFT-------------------- */
+.filter-input{
+    width: 300px;
+    height: 35px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0px 5px rgb(0 0 0 / 0.2);
+    position: relative;
+    padding-left: 40px;
+
+    
+}
+/* .filter-input::placeholder{
+    padding-left: 30px;
+} */
+
+/* .filter-input::after{
+    EN INPUTS/img, ect NO SE PUEDE USAR
+} */
+
+
+/* -------------------------------- */
+
+
+/* DROPDOWN RIGHT------------------ */
+
+.dropdown-main{
+    position: relative;
+}
+.dropdown-main{
+    width: 140px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $white-text;
+    padding: 0 10px;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.dropdown-options{
+    width: 140px;
+    height: auto;
+    background-color: $white-text;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px 10px;
+    position: absolute;
+    margin-top: 3px;
+    z-index: 3;
+
+    ul{
+        list-style: none;
+
+        li{
+            padding-top: 3px;
+        }
+    }
+    
+}
+
+/* -------------------------------- */
+
+
+/* COUNTRIES------------------ */
+
+.cards__container{
+    
+    /* display: flex;
+    justify-content: space-between;    
+    flex-wrap: wrap;
+    gap: 40px; */
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px, 1fr)); */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 220px);
+    justify-content: center;
+    grid-gap: 40px;
+
+    margin-top: 30px ;
+
+}
+
+
+
+.card{
+    background-color: $white-text;
+    /* width: 100%;
+    max-width: 220px; */
+    //margin-bottom: 45px;
+    //margin-right: 35px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        max-width: 220px;
+        height: 100%;
+        min-height: 150px;
+       // object-fit: cover;
+
+    }
+}
+
+.card__main{
+    padding: 15px;
+
+    h2{
+        margin-bottom: 5px;
+    }
+    p{
+        font-weight: 600;
+        color: $very-dark-blue-text;
+        span{
+            font-weight: 100;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 320px ) and (max-width: 768px) {
+    .filter-input{
+        margin-bottom: 25px;
+    }
+}
